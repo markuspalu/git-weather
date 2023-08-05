@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    font-family: 'Carrois Gothic SC', sans-serif;
+    background-image: url("skybackground.png");
+    height: 100vh;
+    overflow: hidden;
+}
+
+.inputcontainer {
+    display: flex;
+    justify-content: center;
+    padding: 2% 35%;
+}
+
+#city {
+    text-align: center;
+    color: rgba(0,0,0,.87);
+    border-bottom-color: rgba(0,0,0,.42);
+    box-sizing: border-box;
+    border: none;
+    background: darkgray;
+    height: 56px;
+    font-family: 'Carrois Gothic SC', sans-serif;
+    font-size: 30px;
+}
+
+#city:hover{
+    border-bottom-color: rgba(0,0,0,.87);
+    background: #ececec;
+}
+
+.informationcontainer {
+    display: flex;
+    margin-top: -30px;
+    gap: 15px;
+    padding: 5%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    color: white;
+}
+
+.informationcontainer > img {
+    height: 100px;
+}
+
+.toggle {
+    position: absolute;
+    right: 5%;
+    top: 6%;
+    width: 40px;
+    height: 20px;
+    border: 2px solid darkgray;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.circle {
+    position: absolute;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: darkgray;
+    transition: .3s;
+}
+
+.active .circle {
+    left: 100%;
+    transform: translateX(-100%);
+    transition: .3s;
+}
+
+.text {
+    position: absolute;
+    top: 25px;
+    font-size: 23px;
+    color: darkgray;
+}
